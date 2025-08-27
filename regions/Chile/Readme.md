@@ -13,12 +13,12 @@ This repository adapts and extends _MassBalanceMachine_ workflows to **Chile**, 
 
 - **Programación base (Perú/Swiss → Chile):**  
   Duilio Fonseca-Gallardo (UdeC) (Notebooks 1–4)  
-  Javier Norambuena (INACH–UMAG), apoyo en Notebook 1
+  Javier Norambuena (INACh–UMag), apoyo en Notebook 1
 
-- **Equipo Chile — UdeC:**  
+- **Equipo Chile — Universidad de Concepción:**  
   Ilaria Tabone · David Farías Barahona
 
-- **Equipo Chile — UMAG–INACH:**  
+- **Equipo Chile — Universidad de Magallanes (UMag) - Instituto Nacional Antártico Chileno (INACh):**  
   Ricardo Jaña · Inti González
 
 ---
@@ -35,7 +35,7 @@ This repository adapts and extends _MassBalanceMachine_ workflows to **Chile**, 
 - `1_data_processing.ipynb` — Ingesta/limpieza, mapeo a RGI, features topográficas y climáticas, mensualización.  
 - `2a_model_training_nn_region.ipynb` — Entrenamiento por región con NN (skorch/torch + MBM).  
 - `2b_model_training_xgboost_region.ipynb` — Entrenamiento por región con XGBoost (Grid/Randomized Search).  
-- `4_Distributed_mass_balance.ipynb` — Cálculo/visualización de balance de masa distribuido.  
+- `3_Distributed_mass_balance.ipynb` — Cálculo/visualización de balance de masa distribuido.  
 - `README.md` — Este documento.  
 
 ---
