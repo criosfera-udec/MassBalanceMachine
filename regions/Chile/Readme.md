@@ -12,8 +12,8 @@ This repository adapts and extends _MassBalanceMachine_ workflows to **Chile**, 
 ## Créditos / Credits
 
 - **Programación base (Perú/Swiss → Chile):**  
-  Duilio Fonseca-Gallardo (UdeC) (Notebooks 1–4)  
-  Javier Norambuena (INACh–UMag), apoyo en Notebook 1
+  Duilio Fonseca-Gallardo (UdeC)
+  Javier Norambuena (INACh–UMag)
 
 - **Equipo Chile — Universidad de Concepción:**  
   Ilaria Tabone · David Farías Barahona
