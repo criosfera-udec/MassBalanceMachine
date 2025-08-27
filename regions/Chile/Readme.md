@@ -9,41 +9,38 @@ This repository adapts and extends _MassBalanceMachine_ workflows to **Chile**, 
 
 ---
 
-## 👥 Créditos / Credits
+## Créditos / Credits
 
 - **Programación base (Perú/Swiss → Chile):**  
-  Duilio Fonseca-Gallardo (Notebooks 1–4)  
+  Duilio Fonseca-Gallardo (UdeC) (Notebooks 1–4)  
   Javier Norambuena (INACH–UMAG), apoyo en Notebook 1
 
 - **Equipo Chile — UdeC:**  
   Ilaria Tabone · David Farías Barahona
 
 - **Equipo Chile — UMAG–INACH:**  
-  Ricardo Jana · Inti González
+  Ricardo Jaña · Inti González
 
 ---
 
-## 🗺️ Regionalización climática / Climate Regionalization
+## Regionalización climática / Climate Regionalization
 
 - **ES:** Se emplea una regionalización explícita (p. ej., *Desert Andes*, *Central Andes*, *North Patagonian Andes*, *South Patagonian Andes*) para **filtrar**, **entrenar** y **evaluar** modelos, y para comparaciones entre regiones.  
 - **EN:** An explicit regionalization (e.g., *Desert Andes*, *Central Andes*, *North Patagonian Andes*, *South Patagonian Andes*) is used to **filter**, **train**, and **evaluate** models, enabling inter-regional comparison.
 
 ---
 
-## 📁 Estructura del repositorio / Repository Structure
+## Estructura del repositorio / Repository Structure
 
 - `1_data_processing.ipynb` — Ingesta/limpieza, mapeo a RGI, features topográficas y climáticas, mensualización.  
 - `2a_model_training_nn_region.ipynb` — Entrenamiento por región con NN (skorch/torch + MBM).  
 - `2b_model_training_xgboost_region.ipynb` — Entrenamiento por región con XGBoost (Grid/Randomized Search).  
 - `4_Distributed_mass_balance.ipynb` — Cálculo/visualización de balance de masa distribuido.  
 - `README.md` — Este documento.  
-- `env/requirements.txt` — Requisitos sugeridos (opcional).
-
-**Orden recomendado / Recommended order:** `1 → 2a/2b → 4`.
 
 ---
 
-## 🔧 Requisitos / Requirements
+## Requisitos / Requirements
 
 - **Python** ≥ 3.10  
 - **Paquetes / Packages:** `pandas`, `numpy`, `xarray`, `geopandas`, `matplotlib`, `seaborn`, `scikit-learn`, `xgboost`, `torch`, `skorch`, `massbalancemachine`  
@@ -58,7 +55,7 @@ This repository adapts and extends _MassBalanceMachine_ workflows to **Chile**, 
 
 ---
 
-## 🗂️ Datos / Data Notes
+## Datos / Data Notes
 
 - **ERA5-Land (mínimo):** `t2m`, `tp`, `slhf`, `sshf`, `ssrd`, `fal`, `str`  
 - **RGI Chile:** para asignar **RGIId** a cada estaca  
@@ -68,7 +65,7 @@ This repository adapts and extends _MassBalanceMachine_ workflows to **Chile**, 
 
 ---
 
-## ▶️ Uso / How to Run
+## Uso / How to Run
 
 1) **Procesamiento de datos** (`1_data_processing.ipynb`)  
    - Limpieza de fechas (→ `YEAR`, `yyyymmdd`), mapeo a **RGIId**, extracción de **topografía** y **clima**, conversión a **mensual**.
@@ -82,7 +79,7 @@ This repository adapts and extends _MassBalanceMachine_ workflows to **Chile**, 
 
 ---
 
-## 📏 Métricas y performance / Metrics & Performance
+## Métricas y performance / Metrics & Performance
 
 - **Nivel fila / Row-level:** MAE, RMSE, r de Pearson; residuales vs. predicción.  
 - **Nivel ID (agregado) / ID-level (aggregated):** promedio por `ID`; comparaciones por glaciar y por región.  
